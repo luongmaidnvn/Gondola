@@ -1,0 +1,11 @@
+country: null
+ic: null
+position: 'Lead Java Backend Developer'
+url: 'http://mowede.com/company/overview/careers/lead-java-backend-developer'
+firstName: Test
+lastName: CAreer
+email: tesr@kfj.com
+phone: '123456789'
+comments: test
+resume: {"user\/pages\/05.Company\/01.Overview\/04.careers\/06.senior-ios-developer\/20181030095332-Facebook is a.doc":{"name":"20181030095332-Facebook is a.doc","type":"application\/msword","size":26624,"path":"user\/pages\/05.Company\/01.Overview\/04.careers\/06.senior-ios-developer\/20181030095332-Facebook is a.doc"}}
+

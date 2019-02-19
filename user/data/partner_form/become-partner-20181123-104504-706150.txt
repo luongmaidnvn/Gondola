@@ -1,0 +1,12 @@
+country: Vietnam
+ic: ' Application Maintenance and Modernization, Mobile Appsurance, Mobile App Development, Software Development, Other '
+typed: competitor
+ClientID: '54952606.5836033'
+firstName: test
+lastName: 'Partner live nor compe'
+email: dfds@zoonou.com
+company: MWD
+phone: '12132314434'
+service: '4'
+message: test
+

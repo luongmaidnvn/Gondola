@@ -1,0 +1,10 @@
+country: Vietnam
+file_name: 'Mototribe’s Mobile App Creates Online Community for Motorcycle Enthusiasts'
+file_path: '/user/pages/04.Resources/01.Overview/01.case-studies/02.mototribe-s-mobile-app-creates-online-community-for-motorcycle-enthusiasts/Mototribe’s Mobile App Creates Online Community for Motorcycle Enthusiasts.pdf'
+url: 'http://mowede.com/resources/overview/case-studies/mototribe-s-mobile-app-creates-online-community-for-motorcycle-enthusiasts'
+typed: undefined
+ClientID: '56573591.08144384'
+firstName: moto
+lastName: 'live exi'
+email: moto@gmail.com
+

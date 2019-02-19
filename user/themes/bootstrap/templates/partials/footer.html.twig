@@ -1,0 +1,64 @@
+<footer class="footer-distributed ">
+    <div class="container">
+			<div class="col-sm-4 footer-left no-padding">
+				<a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
+                	<img class="logo" src="{{ base_url_absolute }}/user/themes/bootstrap/assets/Mowede-Logo-white.png">
+                </a>
+				<div>
+					<i class="phone-footer"><img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/phone-footer.png"></i>
+					<p>+84 2363 655 336 </p>
+				</div>
+
+				<div>
+					<i class="mail-footer"><img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/mail-footer.png"></i>
+					<p><a href="mailto:sales@mowede.com">sales@mowede.com</a></p>
+				</div>
+
+				<div>
+					<i class="location-footer"><img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/location-footer.png"></i>
+					<p>8th floor, 346 2/9 Street, Hai Chau District, Da Nang, Vietnam</p>
+				</div>
+			</div>
+
+			<div class="col-sm-4 footer-center no-padding">
+                <ul class="list-unstyled">
+                   {% for page in pages.children.visible %}
+				   		{% set url = page.url %}
+						{% if page.children.visible.count > 0 %} 
+							{% for child in page.children.visible %}
+								{% if loop.last %}
+									{% set url = child.url %}
+									{% if child.children.visible.count > 0 %} 
+										{% for sub in child.children.visible %}
+											{% if loop.last %}
+												{% set url = sub.url %}
+											{%endif%}
+										{%endfor%}
+									{%endif%}
+								{%endif%}
+							{%endfor%}
+						{%endif%}
+                        <li>
+                           <a href="{{ url }}">{{ page.menu }}</a>
+                        </li>
+                {% endfor %}
+                </ul>
+			</div>
+
+			<div class="col-sm-4 footer-right no-padding">
+				<div class="footer-icons">
+					<a class="linkedin" href="https://www.linkedin.com/company/mowede/" target="_blank"><img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/linkedin.png"></a>
+					<a href="https://www.facebook.com/MOWEDE-215261059074489/" target="_blank"><img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/facebook.png"></a>
+					<a href="https://www.youtube.com/channel/UC7DHzxzqTTaUn0KybjG7zww/featured?view_as=subscriber" target="_blank"><img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/youtube.png"></a>
+					<a href="https://twitter.com/mowedecompany" target="_blank"><img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/twitter.png"></a>
+				</div>
+				
+			</div>			
+            </div>	
+<div class="copyright">
+	<div class="container">
+		<div class="col-xs-8 cp no-padding">© {{"now"|date("Y")}} MOWEDE. All rights reserved.</div>
+		<div class="col-xs-4 security no-padding"><a href="{{ base_url_absolute }}/security-policy">Security Policy</a></div>
+	</div>
+</div>		
+</footer>

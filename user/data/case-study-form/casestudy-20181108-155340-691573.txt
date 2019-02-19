@@ -1,0 +1,10 @@
+country: Vietnam
+file_name: 'Ordering Food Just Got Easier with Waiter.com’s New Mobile Application'
+file_path: '/user/pages/04.Resources/01.Overview/01.case-studies/03.ordering-food-just-got-easier-with-waiter-com-s-new-mobile-application/Ordering Food Just Got Easier with Waiter.com’s New Mobile Application.pdf'
+url: 'http://mowede.com/resources/overview/case-studies/ordering-food-just-got-easier-with-waiter-com-s-new-mobile-application'
+typed: existing
+ClientID: '97471726.50382307'
+firstName: Lưu
+lastName: Minh
+email: luuluu@gmail.com
+

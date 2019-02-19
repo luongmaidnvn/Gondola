@@ -1,0 +1,11 @@
+country: null
+ic: null
+position: 'Lead iOS Developer'
+url: 'http://mowede.com/careers/lead-ios-developer'
+firstName: Lưu
+lastName: Minh
+email: hien.huynh@logigear.com
+phone: '9767966'
+comments: sfsdf
+resume: {"user\/pages\/04.careers\/06.senior-ios-developer\/Claim for Hien Huynh.doc":{"name":"Claim for Hien Huynh.doc","type":"application\/msword","size":75776,"path":"user\/pages\/04.careers\/06.senior-ios-developer\/Claim for Hien Huynh.doc"}}
+

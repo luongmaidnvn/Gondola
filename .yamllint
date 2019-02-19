@@ -1,0 +1,43 @@
+extends: default
+
+ignore: |
+  /vendor/
+  /system/
+  /.gitlab-ci.yml
+  /user/plugins/admin/
+  /user/plugins/login/blueprints.yaml
+  /user/plugins/admin-addon-user-manager/
+  /user/plugins/form/
+  /user/config/
+  /user/plugins/markdown-notices/
+  /user/plugins/login/
+  /user/plugins/email/
+  /user/plugins/tntsearch/
+  /user/plugins/simplesearch/
+  /user/plugins/error/
+  /user/plugins/bootstrapper/languages.yaml
+  /user/plugins/bootstrapper/bootstrapper.yaml
+  /user/themes/bootstrap/blueprints.yaml
+  /user/themes/bootstrap/blueprints/modular/features.yaml
+  /user/themes/bootstrap/blueprints/modular/text.yaml
+  /user/themes/bootstrap/blueprints/modular/showcase.yaml
+  /user/themes/bootstrap/blueprints/asset/file.yaml
+  /user/themes/bootstrap/blueprints/blog.yaml
+  /user/themes/bootstrap/blueprints/item.yaml
+  /user/themes/bootstrap/blueprints/form.yaml
+  /user/accounts/
+  
+rules:
+   line-length:
+    max: 650
+    level: warning
+   document-start:
+    present: false
+   colons:
+    max-spaces-after: -1
+   new-line-at-end-of-file:
+    level: warning
+   trailing-spaces: 
+    level: warning
+   indentation:
+    level: warning

@@ -1,0 +1,85 @@
+{% do assets.add('theme://css/navigation.css') %}
+<nav class="navbar m-menu navbar-default navbar-expand-xl navbar-fixed-top" role="navigation">
+    <div class="container navbar-section-one">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            {# <div class="site_search_mobile">
+                <span>
+                    <img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/search.png">
+                </span>
+            </div> #}
+            <div>
+                <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
+                    <img class="logo" src="{{ base_url_absolute }}/user/themes/bootstrap/assets/Mowede-Logo-01.png"></a>
+                    <div class="navbar-menu">
+                        <button class="button gdlr-button nav-button free-download-button">Free Download</button>
+                        <button class="button dlr-button with-border nav-button buy-turnkey-button">Buy Turnkey</button>
+                        <button class="button dlr-button nav-link">Blog</button>
+                        <button class="button dlr-button nav-link">About Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container navbar-section-two">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                {% for page in pages.children.visible %}
+                    {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                    {% if config.themes.bootstrap.dropdown.enabled and page.children.visible.count > 0 %}
+                    <li class="{{ current_page }}">
+                        {% if page.children.visible.count > 0 %} 
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ page.menu }}
+                            <span><i class="fa fa-angle-down"></i></span></a>                                              
+                            <ul class="dropdown-menu multi-level">
+                                {% for dropdownHeader in page.children.visible %}
+                                    {% set current_sub_page = (dropdownHeader.active or dropdownHeader.activeChild) ? 'active' : '' %}
+                                    {% if dropdownHeader.children.visible.count > 0 %}
+                                    <li class="sub-menu dropdown-submenu {{ current_sub_page }}">                                        
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ dropdownHeader.menu }}</a>
+                                        <ul class="dropdown-menu">
+                                            {% for dropdownItem in dropdownHeader.children.visible %}
+                                            {% set current_sub_page = (dropdownItem.active or dropdownItem.activeChild) ? 'active' : '' %}
+                                            <li class="dropdown-sub-item {{ current_sub_page }}">
+                                                <a href="{{ dropdownItem.url }}">{{ dropdownItem.menu }}</a>
+                                            </li>
+                                            {% endfor %}                            
+                                        </ul>                                        
+                                    </li>    
+                                    {% else %}
+                                        <li class="sub-menu {{ current_sub_page }}"><a href="{{ dropdownHeader.url }}">{{ dropdownHeader.menu }}</a></li>
+                                    {% endif %}                                
+                                {% endfor %}
+                            </ul>   
+                        {% else %}
+                            <a href="{{ page.url }}">{{ page.menu }}</a>
+                        {% endif %}
+                    </li>
+                    {% else %}
+                        <li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for mitem in site.menu %}
+                    <li>
+                        <a href="{{ mitem.url }}">{{ mitem.text }}</a>
+                    </li>
+                {% endfor %}
+                {# <li class="" id="site_search">                    
+                    <span>
+                        <img src="{{ base_url_absolute }}/user/themes/bootstrap/assets/search.png">
+                    </span>
+                </li> #}
+
+                {% if config.plugins.login.enabled and grav.user.username %}
+                    <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

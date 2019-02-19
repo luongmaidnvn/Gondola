@@ -1,0 +1,12 @@
+country: Vietnam
+ic: ' Application Maintenance and Modernization, Mobile Appsurance '
+typed: competitor
+ClientID: '79970774.04159765'
+firstName: Test
+lastName: Competitor
+email: Test@seleniumhq.org
+company: Test
+phone: '123 456 789'
+service: '1'
+message: Test
+

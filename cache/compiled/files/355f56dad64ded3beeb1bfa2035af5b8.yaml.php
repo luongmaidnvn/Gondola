@@ -1,0 +1,46 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/Applications/XAMPP/xamppfiles/htdocs/mowede/user/accounts/luongmai.yaml',
+    'modified' => 1550474998,
+    'data' => [
+        'state' => 'enabled',
+        '_json' => [
+            'avatar' => 'null',
+            'state' => '"enabled"'
+        ],
+        'email' => 'luongmai.dnvn@gmail.com',
+        'fullname' => 'Luong Mai',
+        'language' => 'en',
+        'twofa_enabled' => false,
+        'twofa_secret' => 'MDUSC6GUW74KEOQE3UYIT37P2LOCNHOT',
+        'access' => [
+            'site' => [
+                'login' => 'true'
+            ],
+            'admin' => [
+                'super' => 'true',
+                'login' => 'true',
+                'cache' => 'true',
+                'configuration' => 'true',
+                'configuration_system' => 'true',
+                'configuration_site' => 'true',
+                'configuration_media' => 'true',
+                'configuration_info' => 'true',
+                'settings' => 'true',
+                'pages' => 'true',
+                'maintenance' => 'true',
+                'statistics' => 'true',
+                'plugins' => 'true',
+                'themes' => 'true',
+                'users' => 'true'
+            ],
+            'admin-addon-user-manager' => [
+                'users' => 'true',
+                'groups' => 'true',
+                'users_expert' => 'true'
+            ]
+        ],
+        'hashed_password' => '$2y$10$3hjJ5dyrEeniBGecTl1Y6OjcjeZoxSBKxzZKn4n4nG1j1jmH7m44K'
+    ]
+];

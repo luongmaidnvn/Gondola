@@ -1,0 +1,21 @@
+{% extends "forms/field.html.twig" %}
+
+{% block input %}    
+    <script>
+    $(document).ready(function () {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LeNFogUAAAAACapIHbXE2T2QXOIkpEw-ubfFK7m', {action: 'action_name'})
+            .then(function(token) {
+                $('#g-recaptcha-response').val(token);
+            });
+        });
+    });
+    </script>
+    <div class="g-recaptcha" id="g-recaptcha">
+        <input type="hidden" class="g-recaptcha-response"  value="" name="g-recaptcha-response" id="g-recaptcha-response">
+        <label id="g-recaptcha-error" class="error" for="g-recaptcha-response"></label>
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+    </div>
+{% endblock %}

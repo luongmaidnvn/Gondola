@@ -1,0 +1,43 @@
+.title p {
+    font-size: 20px;
+}
+
+.discrible-container .discrible {
+    display: flex;
+    padding: 50px 0;
+}
+
+div.discrible-container .image {
+    float: left;
+    max-width: 35px
+}
+
+div.discrible-container .content {
+    padding-left: 55px;
+}
+
+@media (max-width:768px) {
+    .discrible-container .discrible {
+        display: block;
+        text-align: center;
+        padding: 30px !important;
+    }
+    .discrible-container .discrible p {
+        margin: 0px;
+    }
+    .discrible-container .discrible .col-sm-4 {
+        padding-bottom: 20px;
+    }
+    div.discrible-container .image {
+        float: unset;
+        height: auto;
+        max-width: auto;
+        margin: auto;
+    }
+    div.discrible-container .content {
+        padding-left: 0px;
+    }
+    .discrible-container .discrible .content .info {
+        text-align: left;
+    }
+}

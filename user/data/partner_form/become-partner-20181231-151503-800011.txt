@@ -1,0 +1,12 @@
+country: Vietnam
+ic: ' Application Maintenance and Modernization '
+typed: undefined
+ClientID: '56929103.64839327'
+firstName: test
+lastName: test
+email: test@trest.com
+company: 'test MWD'
+phone: '12132314434'
+service: null
+message: null
+

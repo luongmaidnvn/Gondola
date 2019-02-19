@@ -1,0 +1,10 @@
+country: Vietnam
+file_name: 'E-Coupon Site Partners with MOWEDE to Develop Mobile Application'
+file_path: '/user/pages/04.Resources/01.Overview/01.case-studies/01.e-coupon-site-partners-with-mowede-to-develop-mobile-application/E-Coupon Site Partners with MOWEDE to Develop Mobile Application.pdf'
+url: 'http://mowede.com/resources/overview/case-studies/e-coupon-site-partners-with-mowede-to-develop-mobile-application'
+typed: undefined
+ClientID: '8276263.910131809'
+firstName: Oanh
+lastName: Test
+email: terrorisations@akmandken.tk
+
